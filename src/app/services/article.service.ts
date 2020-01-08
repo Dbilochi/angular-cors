@@ -9,7 +9,7 @@ import {tap} from 'rxjs/operators';
 export class ArticleService {
     constructor(private http :HttpClient){}
     getArticles(){
-        return this.http.get('http://rocky-stream-85231.herokuapp.com/api/v1/articles');
+        return this.http.get('https://rocky-stream-85231.herokuapp.com/api/v1/articles');
     }
 
     getBooks(){
