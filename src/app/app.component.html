@@ -2,6 +2,7 @@
   <h3>
     Book Titles from Rails Api
   </h3>
+  <p *ngIf="!articles">No Content</p>
   <div *ngFor="let article of articles">
     <p>{{article.title}}</p>
   </div>
@@ -11,6 +12,7 @@
   <h3>
     Book Titles from Go Api
   </h3>
+  <p *ngIf="!books">No Content</p>
   <div *ngFor="let book of books">
     <p>{{book}}</p>
   </div>
